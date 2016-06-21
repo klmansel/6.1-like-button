@@ -1,0 +1,54 @@
+$red: #d00;
+$darkgray: #5a5b60;
+$black: #000;
+$teal: #61b2c3;
+$white: #fff;
+
+// Bootstrap Variables
+$icon-font-path: '../../node_modules/bootstrap-sass/assets/fonts/bootstrap/';
+
+// Import Bootstrap
+@import '../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap';
+
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+}
+
+.wrapper {
+  background: url('../images/youlikeme.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 1000px;
+  margin-top: 0;
+}
+
+
+.like-button {
+  background-color: $teal;
+  color: $black;
+  font-family: 'Impact';
+  font-size: 30px;
+  margin-left: 45%;
+  margin-top: 25%;
+
+  &:hover {
+    background-color: $darkgray;
+    color: $teal;
+  }
+}
+
+.refresh {
+  color: $white;
+  margin-left: 48%;
+
+  &:hover {
+    color: $darkgray;
+  }
+}
